@@ -10,6 +10,7 @@
   <a href="#how-to-use">How To Use</a> •
   <a href="#introduction">Introduction</a> •
   <a href="#experimental-set-up">Experimental Set-Up</a> •
+  <a href="#exploratory-data-analysis">EDA</a> •
   <a href="#results">Results</a> •
   <a href="#future-work">Future Work</a> 
 </p>
@@ -77,6 +78,24 @@ The following models have been implemented and evaluated:
 - Data Split: Train (80%), Validation (10%), Test (10%)
 - Evaluation Metrics: RMSE, MAE
 
+## Exploratory Data Analysis
+
+### Discount Rate vs Sales Volume
+<img src="img/discount_rate_sales.png" alt="Discount Rate vs Sales Volume" width="600">
+
+- **Higher discount rates generally result in higher sales volumes, as expected customers tend to look for the products with a high discount associated to them.**
+
+### Correlation Matrix
+<img src="img/correlation_matrix.png" alt="Correlation Matrix" width="600">
+
+- **Higher discounts and longer promotions result in higher sales, suggesting promotions play an important role when trying to boost sales.**
+- **Negative correlations can be found with the features "Planned_Promotions_30_Days" and "Planned_Promotions_7_Days". Future planned promotions might discourage immediate purchases.**
+
+### Sales Volume Over Time
+<img src="img/sales_volume_over_time.png" alt="Sales Volume Over Time" width="600">
+
+- **Sales volume fluctuates throughout the years, with noticeable peaks around specific months (likely holiday seasons as December).**
+- **Spikes in sales volume can be found likely due to promotional events or special sales.**
 
 ## Results
 
