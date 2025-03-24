@@ -152,7 +152,8 @@ Performance comparison of models:
 - Apply advanced feature selection techniques.
 - Improve ensemble strategy by trying **stacking and boosting techniques**.
 - Experiment with different learning rates, regularization techniques, and feature engineering.
-- Include Hyperparameter Tuning
+- Include Hyperparameter Tuning.
+- Another algorithm/approach can be also considered in further analysis.
 
 ---
 
