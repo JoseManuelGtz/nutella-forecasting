@@ -11,6 +11,7 @@
   <a href="#introduction">Introduction</a> •
   <a href="#experimental-set-up">Experimental Set-Up</a> •
   <a href="#exploratory-data-analysis">EDA</a> •
+  <a href="#ml-insights">ML Insights</a> •
   <a href="#results">Results</a> •
   <a href="#future-work">Future Work</a> 
 </p>
@@ -96,6 +97,35 @@ The following models have been implemented and evaluated:
 
 - **Sales volume fluctuates throughout the years, with noticeable peaks around specific months (likely holiday seasons as December).**
 - **Spikes in sales volume can be found likely due to promotional events or special sales.**
+
+## ML Insights
+
+### Feature Importance Analysis
+- **XGBoost Feature Importance**  
+  <img src="img/xgboost_feature_importance.png" alt="XGBoost Feature Importance" width="700">
+  - The most important features are `Location_Type_Rural`, `Supermarket_Type_Small`, `Month`, and `Promotion_Duration`.
+
+- **CatBoost Feature Importance**  
+  <img src="img/catboost_feature_importance.png" alt="CatBoost Feature Importance" width="700">
+  - `Month` is the most significant feature, followed by `Supermarket_Type_Small` and `Location_Type_Rural`.
+
+### Learning Curve Analysis
+<p align="center">
+  <img src="img/xgboost_lc.png" alt="XGBoost Learning Curve" width="450">
+  <img src="img/catboost_lc.png" alt="CatBoost Learning Curve" width="450">
+</p>
+
+- **XGBoost Learning Curve:** The training error is consistently low, while the validation error improves with larger training sizes, indicating a reduction of overfitting.
+- **CatBoost Learning Curve:** The training error remains low throughout, while validation error decreases significantly when more data is used, showing good generalization.
+
+Plots generated during model evaluation:
+- Feature Importance (Random Forest, XGBoost, CatBoost)
+- Learning Curves (Random Forest, XGBoost, CatBoost)
+- Ensemble Model Comparison
+
+These graphs provide insights into feature relevance, model training dynamics, and overall model performance.
+
+
 
 ## Results
 
