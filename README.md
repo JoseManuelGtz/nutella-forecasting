@@ -40,7 +40,7 @@ $ pip install -r requirements.txt
 
 ## Introduction
 
-The Nutella Sales Prediction Concept aims to forecast the daily sales volume of Nutella across various supermarkets based on several factors such as promotions, discount rates, store traffic, and location type. This analysis helps to optimize stock management and promotional strategies.
+The Nutella Sales Prediction Concept aims to forecast the daily sales volume of Nutella across various supermarkets based on several factors such as promotions, discount rates, store traffic, and location type. This project is a conceptualization of an isolated scenario focused on incorporating discounts into products and predicting the optimal stock to order. The use case is scalable to a wide range of products, not only restricted to Nutella. This analysis helps to optimize stock management and promotional strategies
 
 The dataset is stored as `nutella_sales.csv` and includes various numerical and categorical features to enhance the prediction.
 
@@ -128,6 +128,13 @@ These graphs provide insights into feature relevance, model training dynamics, a
 
 
 ## Results
+
+The results demonstrate that **CatBoost** achieved the lowest RMSE on both the validation and test sets, suggesting it has the best predictive performance among the individual models. The **Ensemble Model**, which combines predictions from XGBoost and CatBoost using a weighted average, shows an improved performance compared to XGBoost but slightly worse than CatBoost alone. This indicates that the ensemble strategy effectively captures diverse patterns from different models but could benefit from additional tuning or a better meta-learner.
+
+Key Insights:
+- **CatBoost** outperformed the other models with a test RMSE of **5.64**, indicating good generalization capability.
+- **XGBoost** performed reasonably well with a test RMSE of **6.99**, which suggests that its performance could be enhanced by further hyperparameter tuning.
+- The **Ensemble Model** provides a promising approach but requires further refinement to improve over the best single model.
 
 Performance comparison of models:
 
