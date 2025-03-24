@@ -19,7 +19,7 @@
 
 ## How To Use
 
-To clone and run this challenge, you'll need to install the packages found under the **requirements.txt** file. From your command line:
+To clone and run this repository, you'll need to install the packages found under the **requirements.txt** file. From your command line:
 
 ```bash
 # Clone this repository
